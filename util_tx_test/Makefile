@@ -7,7 +7,7 @@ APP_NAME := util_tx_test
 CC := $(CROSS_COMPILE)gcc
 AR := $(CROSS_COMPILE)ar
 
-CFLAGS := -O2 -Wall -Wextra -std=c99 -Iinc -I.
+CFLAGS := -O2 -Wall -lm -Wextra -std=c99 -Iinc -I.
 
 ### General build targets
 

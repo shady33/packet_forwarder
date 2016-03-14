@@ -4,7 +4,7 @@ APP_NAME := gps_pkt_fwd
 
 ### Environment constants 
 
-LGW_PATH ?= ../../lora_gateway/libloragw
+LGW_PATH ?= ../../lora_gateway-3.2.0/libloragw
 ARCH ?=
 CROSS_COMPILE ?=
 
@@ -35,7 +35,7 @@ LGW_INC += $(LGW_PATH)/inc/loragw_gps.h
 
 ### Linking options
 
-LIBS := -lloragw -lrt -lpthread
+LIBS := -lloragw -lrt -lpthread -lm
 
 ### General build targets
 
