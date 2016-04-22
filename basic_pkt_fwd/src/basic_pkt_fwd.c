@@ -1159,7 +1159,8 @@ void thread_up(void) {
 				buff_index += j;
 			} else {
 				MSG("ERROR: [up] bin_to_b64 failed line %u\n", (__LINE__ - 5));
-				exit(EXIT_FAILURE);
+				// exit(EXIT_FAILURE);
+				continue; /* skip that packet */
 			}
 			buff_up[buff_index] = '"';
 			++buff_index;
